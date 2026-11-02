@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Dashboard"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="32dp"/>
+
+            <Button
+                android:id="@+id/btnManageCatalogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Catalogue"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnCreateOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Order"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order &amp; Booking History"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

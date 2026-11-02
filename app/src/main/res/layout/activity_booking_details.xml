@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Details"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvBookingServiceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvBookingDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvBookingLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvBookingStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorSecondary"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tvBookingNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnCancelBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel Booking"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnReviewBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate &amp; Review"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

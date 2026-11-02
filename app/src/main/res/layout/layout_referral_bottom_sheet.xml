@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_card">
+
+    <!-- Handle Bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorOutline"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Friends &amp; Earn Discounts"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share your unique referral code with friends. They get 5% OFF their first booking, and you earn 500 UGX credit!"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Code Card with Copy Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_input"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvReferralCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GLOWUP5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:letterSpacing="0.1"/>
+
+        <Button
+            android:id="@+id/btnCopyReferralCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Code"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@color/colorOnPrimary"
+            android:minHeight="44dp"
+            android:paddingHorizontal="16dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Sharing Method"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- WhatsApp Share -->
+    <Button
+        android:id="@+id/btnShareWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share via WhatsApp"
+        android:drawableStart="@drawable/ic_share_whatsapp"
+        android:drawablePadding="12dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/bg_input"
+        android:textColor="@color/colorTextPrimary"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- SMS / Message Share -->
+    <Button
+        android:id="@+id/btnShareSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share via SMS / Message"
+        android:drawableStart="@drawable/ic_share_sms"
+        android:drawablePadding="12dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/bg_input"
+        android:textColor="@color/colorTextPrimary"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Email Share -->
+    <Button
+        android:id="@+id/btnShareEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share via Email"
+        android:drawableStart="@drawable/ic_share_email"
+        android:drawablePadding="12dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/bg_input"
+        android:textColor="@color/colorTextPrimary"
+        android:minHeight="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Android System Share Sheet -->
+    <Button
+        android:id="@+id/btnShareSocials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share via Socials / All Apps (Share Sheet)"
+        android:drawableStart="@drawable/ic_share_socials"
+        android:drawablePadding="12dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/bg_button_primary"
+        android:textColor="@color/colorOnPrimary"
+        android:minHeight="48dp"/>
+
+</LinearLayout>

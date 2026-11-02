@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Customer Order"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Full Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etCustomerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer Phone"
+                android:inputType="phone"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etOrderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order Date (YYYY-MM-DD)"
+                android:inputType="date"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order Notes"
+                android:inputType="text"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnSubmitOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Order"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <!-- Welcome Card Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Client"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:background="@drawable/bg_input"
+                    android:textColor="@color/colorTextPrimary"
+                    android:minHeight="44dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAdminDashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:background="@drawable/bg_input"
+                    android:textColor="@color/colorTextPrimary"
+                    android:minHeight="44dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btnMyBookings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bookings"
+                    android:background="@drawable/bg_input"
+                    android:textColor="@color/colorTextPrimary"
+                    android:minHeight="44dp"
+                    android:paddingHorizontal="16dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:background="@drawable/bg_input"
+                    android:textColor="@color/colorTextPrimary"
+                    android:minHeight="44dp"
+                    android:paddingHorizontal="16dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- Special Promo Banner Card (Clickable to Invite Friends & Share 5% OFF) -->
+    <LinearLayout
+        android:id="@+id/cardSpecialOffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special For You: Invite Friends &amp; Get 5% OFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to invite friends &amp; share code (GLOWUP5)! Top Salons: Glamour Haven • Salon De Luxe"
+            android:textSize="13sp"
+            android:textColor="@color/colorTextSecondary"/>
+    </LinearLayout>
+
+    <!-- Search Input Bar -->
+    <EditText
+        android:id="@+id/etSearchServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search specialists or services..."
+        android:inputType="text"
+        android:background="@drawable/bg_input"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        android:layout_marginBottom="12dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCategoryAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryHair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hair"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryNails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nails"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryMakeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makeup"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryLash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lash"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategoryBarber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barber"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategorySkinCare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skin Care"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnCategorySpas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spas"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/lvServices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="0dp"/>
+
+</LinearLayout>

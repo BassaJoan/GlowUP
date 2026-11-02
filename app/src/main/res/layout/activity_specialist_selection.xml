@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Specialist"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a top-rated beauty professional for your appointment:"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"/>
+        </LinearLayout>
+
+        <!-- Specialist Item 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musiimenta Zam | 4.8 Rating (1.1 km away)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master Hair Stylist &amp; Colorist • Available Today"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnBookMusiimenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Musiimenta Zam &amp; Choose Time"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <!-- Specialist Item 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poni Ritah Minga | 4.9 Rating (0.8 km away)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makeup Artist &amp; Skincare Specialist • Highly Rated"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnBookPoni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Poni Ritah &amp; Choose Time"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <!-- Specialist Item 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Omoding Julius | 4.9 Rating (1.5 km away)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barber &amp; Men's Grooming Specialist"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnBookOmoding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Omoding Julius &amp; Choose Time"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

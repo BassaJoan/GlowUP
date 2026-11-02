@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvOwnerWelcome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salon Owner Dashboard"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/btnOwnerLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <!-- Reports & Sales Summary Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales, Commissions &amp; Reports"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalRevenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Revenue: UGX 360,000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvTotalCommissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Staff Commissions: UGX 252,000 (70%)"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvActiveBookingsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Active Appointments: 5 Bookings"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextSecondary"/>
+        </LinearLayout>
+
+        <!-- Business Actions Grid Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salon Management Tools"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnManageCatalogue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Catalogue &amp; Pricing"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnManageStaff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage Staff &amp; Technicians"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnViewAllOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Orders &amp; Staff Schedules"
+                android:background="@drawable/bg_button_primary"
+                android:textColor="@color/colorOnPrimary"
+                android:minHeight="48dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnCreateOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Walk-In Order"
+                android:background="@drawable/bg_input"
+                android:textColor="@color/colorTextPrimary"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
